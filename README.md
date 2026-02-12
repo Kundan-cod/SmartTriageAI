@@ -246,7 +246,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ### **Development Setup:**
 ```bash
-git clone https://github.com/YOUR_USERNAME/SmartTriage-AI.git
+git clone https://github.com/Kundan-code/SmartTriage-AI.git
 cd SmartTriage-AI
 # Open index.html in your browser and start coding!
 ```
@@ -276,7 +276,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 📞 Contact
 
-**Project Repository:** [https://github.com/YOUR_USERNAME/SmartTriage-AI](https://github.com/YOUR_USERNAME/SmartTriage-AI)
+**Project Repository:** [https://github.com/Kundan-cod/SmartTriage-AI](https://github.com/Kundan-cod/SmartTriage-AI)
 
 **Issues/Questions:** Open an issue on GitHub
 
