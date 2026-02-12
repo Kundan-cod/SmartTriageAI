@@ -300,7 +300,7 @@ This project demonstrates:
 
 **⭐ If you find this project useful, please give it a star!**
 
-**Made with 💙 by [Your Name]**
+**Made with 💙 by [Mrityunjay]**
 
 **Powered by AI-driven healthcare innovation**
 
