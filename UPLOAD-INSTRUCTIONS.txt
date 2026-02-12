@@ -1,0 +1,90 @@
+========================================
+📤 UPLOAD TO GITHUB - SIMPLE GUIDE
+========================================
+
+Your SmartTriage-Advanced project is ready to upload!
+
+Location: C:\Users\24csed11\SmartTriage-Advanced
+
+========================================
+✨ EASIEST METHOD: GitHub Web Upload
+========================================
+
+1. Go to: https://github.com/new
+
+2. Create repository:
+   - Repository name: SmartTriage-AI
+   - Description: AI-powered tele-health triage system with doctor-patient workflow
+   - Public or Private (your choice)
+   - DO NOT check any boxes (no README, no .gitignore, no license)
+   - Click "Create repository"
+
+3. Upload files:
+   - On the new repository page, click "uploading an existing file"
+   - Open Windows Explorer to: C:\Users\24csed11\SmartTriage-Advanced
+   - Select ALL files:
+     * index.html
+     * script.js
+     * styles.css
+     * README.md
+     * PROJECT_OVERVIEW.md
+     * QUICKSTART.md
+     * DOCTOR-PATIENT-WORKFLOW.md
+     * DOCTOR-VIEW-DETAILS.md
+   - Drag and drop them into GitHub
+   - Commit message: "Initial commit: SmartTriage AI system"
+   - Click "Commit changes"
+
+✅ DONE! Your project is on GitHub!
+
+========================================
+🔧 ALTERNATIVE: Use PowerShell Script
+========================================
+
+AFTER restarting PowerShell (to load Git):
+
+1. Close this PowerShell window
+2. Open NEW PowerShell window
+3. Run:
+   cd C:\Users\24csed11\SmartTriage-Advanced
+   .\upload-to-github.ps1
+
+The script will guide you through the process!
+
+========================================
+📝 Repository Info to Use
+========================================
+
+Name: SmartTriage-AI
+
+Description:
+AI-powered tele-health triage system with real-time doctor-patient workflow management. Features 3-layer context-aware AI, explainable intelligence, and comprehensive patient assessment.
+
+Topics (tags):
+- healthcare
+- telemedicine
+- artificial-intelligence
+- triage
+- medical
+- javascript
+- patient-management
+- workflow
+- explainable-ai
+
+========================================
+🎯 After Upload
+========================================
+
+1. Add topics to your repository (Settings → Topics)
+2. Update README.md to include your GitHub username
+3. Share the link!
+4. Star your own project ⭐
+
+========================================
+📞 Need Help?
+========================================
+
+The README.md file has complete documentation.
+Everything is ready - just upload the files!
+
+========================================

@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartTriage AI – Context-Aware Intelligent Patient Prioritization</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 3D Animated Background -->
+    <div class="background-container">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+        <canvas id="particleCanvas"></canvas>
+    </div>
+
+    <!-- Floating Medical Icons -->
+    <div class="floating-icons">
+        <div class="float-icon heartbeat">💓</div>
+        <div class="float-icon cross">⚕️</div>
+        <div class="float-icon shield">🛡️</div>
+        <div class="float-icon pulse">📊</div>
+        <div class="float-icon stethoscope">🩺</div>
+        <div class="float-icon pill">💊</div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">🏥</span>
+                <span class="logo-text">SmartTriage<span class="ai-badge">AI</span></span>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#how-it-works" class="nav-link">How It Works</a>
+                <a href="#triage" class="nav-link">Start Assessment</a>
+                <a href="#dashboard" class="nav-link">Doctor Dashboard</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="badge">Context-Aware AI • Explainable Intelligence</div>
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Context-Aware AI Triage</span>
+                        <br>Smart Patient Prioritization
+                    </h1>
+                    <p class="hero-subtitle">
+                        Next-generation AI that understands patient context, not just symptoms. 
+                        <br>Multi-layer risk assessment with transparent, explainable decisions.
+                    </p>
+                    <button class="cta-button" onclick="scrollToSection('triage')">
+                        <span>Start Smart Assessment</span>
+                        <span class="button-glow"></span>
+                    </button>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">3-Layer</div>
+                            <div class="stat-label">AI Analysis</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Explainable</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">Smart</div>
+                            <div class="stat-label">Routing</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-illustration">
+                    <div class="illustration-container">
+                        <div class="doctor-icon">👨‍⚕️</div>
+                        <div class="ai-circle">
+                            <div class="ai-text">AI</div>
+                            <div class="pulse-ring"></div>
+                            <div class="pulse-ring delay-1"></div>
+                            <div class="pulse-ring delay-2"></div>
+                        </div>
+                        <div class="floating-element element-1">
+                            <span>🧬</span>
+                        </div>
+                        <div class="floating-element element-2">
+                            <span>💉</span>
+                        </div>
+                        <div class="floating-element element-3">
+                            <span>🔬</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works-section">
+        <div class="container">
+            <h2 class="section-title">3-Layer Context-Aware AI System</h2>
+            <p class="section-subtitle">What makes our AI different from basic triage systems</p>
+            
+            <div class="cards-container">
+                <div class="work-card" data-step="1">
+                    <div class="card-icon-wrapper">
+                        <div class="card-icon">🎯</div>
+                    </div>
+                    <h3 class="card-title">Layer 1: Symptom Severity</h3>
+                    <p class="card-description">
+                        Analyzes primary symptoms, pain levels, duration, and emergency flags using medical scoring protocols
+                    </p>
+                    <div class="feature-tags">
+                        <span class="tag">Smart Questions</span>
+                        <span class="tag">Dynamic Form</span>
+                    </div>
+                    <div class="card-number">01</div>
+                </div>
+
+                <div class="work-card" data-step="2">
+                    <div class="card-icon-wrapper">
+                        <div class="card-icon">🧠</div>
+                    </div>
+                    <h3 class="card-title">Layer 2: Patient Context</h3>
+                    <p class="card-description">
+                        Considers age groups, pre-existing conditions, symptom progression, and vulnerability factors
+                    </p>
+                    <div class="feature-tags">
+                        <span class="tag">Age Analysis</span>
+                        <span class="tag">Medical History</span>
+                        <span class="tag">Progression Tracking</span>
+                    </div>
+                    <div class="card-number">02</div>
+                </div>
+
+                <div class="work-card" data-step="3">
+                    <div class="card-icon-wrapper">
+                        <div class="card-icon">🚀</div>
+                    </div>
+                    <h3 class="card-title">Layer 3: Smart Routing</h3>
+                    <p class="card-description">
+                        Generates personalized recommendations, routing decisions, and actionable medical advice
+                    </p>
+                    <div class="feature-tags">
+                        <span class="tag">ER</span>
+                        <span class="tag">Urgent Care</span>
+                        <span class="tag">Self-Care</span>
+                    </div>
+                    <div class="card-number">03</div>
+                </div>
+            </div>
+
+            <!-- Explainability Section -->
+            <div class="explainability-section">
+                <div class="explainability-icon">🔍</div>
+                <h3>Explainable AI Transparency</h3>
+                <p>Unlike "black box" AI systems, every decision is transparent with detailed reasoning showing exactly WHY a priority level was assigned</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Symptom Form Section (Enhanced) -->
+    <section id="triage" class="triage-section">
+        <div class="container">
+            <h2 class="section-title">Context-Aware Assessment</h2>
+            <p class="section-subtitle">Smart questions that adapt based on your answers</p>
+            
+            <div class="form-card">
+                <form id="triageForm" class="triage-form">
+                    <div class="form-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progressFill"></div>
+                        </div>
+                        <div class="progress-text">
+                            Step <span id="currentStep">1</span> of <span id="totalStepsDisplay">9</span>
+                        </div>
+                    </div>
+
+                    <!-- Step 1: Basic Info -->
+                    <div class="form-step active" data-step="1">
+                        <div class="step-header">
+                            <span class="step-icon">👤</span>
+                            <h3>Personal Information</h3>
+                        </div>
+                        <div class="form-group">
+                            <label for="patientName">Full Name</label>
+                            <input type="text" id="patientName" name="patientName" required placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Age</label>
+                            <input type="number" id="age" name="age" required min="0" max="120" placeholder="Enter your age">
+                        </div>
+                        <div class="form-group">
+                            <label for="gender">Gender</label>
+                            <select id="gender" name="gender" required>
+                                <option value="">Select gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Main Symptom -->
+                    <div class="form-step" data-step="2">
+                        <div class="step-header">
+                            <span class="step-icon">🩺</span>
+                            <h3>Primary Symptom</h3>
+                        </div>
+                        <div class="form-group">
+                            <label for="mainSymptom">What is your main concern?</label>
+                            <select id="mainSymptom" name="mainSymptom" required>
+                                <option value="">Select your primary symptom</option>
+                                <option value="chest-pain">Chest Pain / Pressure</option>
+                                <option value="breathing-difficulty">Difficulty Breathing / Shortness of Breath</option>
+                                <option value="severe-headache">Severe Headache / Sudden Onset</option>
+                                <option value="abdominal-pain">Abdominal Pain</option>
+                                <option value="fever">Fever</option>
+                                <option value="dizziness">Dizziness / Fainting</option>
+                                <option value="injury">Injury / Trauma</option>
+                                <option value="allergic-reaction">Allergic Reaction</option>
+                                <option value="nausea">Nausea / Vomiting</option>
+                                <option value="cough">Persistent Cough</option>
+                                <option value="bleeding">Severe Bleeding</option>
+                                <option value="confusion">Confusion / Altered Mental State</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Severity -->
+                    <div class="form-step" data-step="3">
+                        <div class="step-header">
+                            <span class="step-icon">📊</span>
+                            <h3>Severity Assessment</h3>
+                        </div>
+                        <div class="form-group">
+                            <label for="severity">Pain/Discomfort Level: <span id="severityValue">5</span>/10</label>
+                            <input type="range" id="severity" name="severity" min="1" max="10" value="5" class="severity-slider">
+                            <div class="severity-labels">
+                                <span>Mild</span>
+                                <span>Moderate</span>
+                                <span>Severe</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 4: Duration -->
+                    <div class="form-step" data-step="4">
+                        <div class="step-header">
+                            <span class="step-icon">⏱️</span>
+                            <h3>Symptom Timeline</h3>
+                        </div>
+                        <div class="form-group">
+                            <label for="duration">How long have you had these symptoms?</label>
+                            <select id="duration" name="duration" required>
+                                <option value="">Select duration</option>
+                                <option value="less-1-hour">Less than 1 hour (Sudden onset)</option>
+                                <option value="1-6-hours">1-6 hours</option>
+                                <option value="6-24-hours">6-24 hours</option>
+                                <option value="1-3-days">1-3 days</option>
+                                <option value="3-7-days">3-7 days</option>
+                                <option value="more-week">More than a week</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Step 5: Progression (Context-Aware) -->
+                    <div class="form-step" data-step="5">
+                        <div class="step-header">
+                            <span class="step-icon">📈</span>
+                            <h3>Symptom Progression</h3>
+                        </div>
+                        <div class="form-group">
+                            <label>How are your symptoms changing?</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="progression" value="worsening" required>
+                                    <span class="radio-custom"></span>
+                                    <span>Getting worse rapidly</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="progression" value="stable">
+                                    <span class="radio-custom"></span>
+                                    <span>Staying the same</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="progression" value="improving">
+                                    <span class="radio-custom"></span>
+                                    <span>Slowly improving</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 6: Pre-existing Conditions (Context Layer) -->
+                    <div class="form-step" data-step="6">
+                        <div class="step-header">
+                            <span class="step-icon">📋</span>
+                            <h3>Medical History</h3>
+                        </div>
+                        <div class="form-group">
+                            <label>Do you have any of these conditions?</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="conditions" value="diabetes">
+                                    <span>Diabetes</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="conditions" value="hypertension">
+                                    <span>High Blood Pressure</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="conditions" value="heart-disease">
+                                    <span>Heart Disease</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="conditions" value="asthma">
+                                    <span>Asthma / COPD</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="conditions" value="cancer">
+                                    <span>Cancer</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="conditions" value="kidney-disease">
+                                    <span>Kidney Disease</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="conditions" value="immunocompromised">
+                                    <span>Weakened Immune System</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="conditions" value="none">
+                                    <span>None of the above</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 7: Emergency Flags -->
+                    <div class="form-step" data-step="7">
+                        <div class="step-header">
+                            <span class="step-icon">🚨</span>
+                            <h3>Emergency Warning Signs</h3>
+                        </div>
+                        <div class="form-group">
+                            <label>Are you experiencing any of these? (Select all that apply)</label>
+                            <div class="checkbox-group emergency-flags">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="emergencyFlags" value="loss-consciousness">
+                                    <span>Loss of consciousness / Fainting</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="emergencyFlags" value="chest-pain-radiating">
+                                    <span>Chest pain radiating to arm/jaw</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="emergencyFlags" value="severe-bleeding">
+                                    <span>Uncontrolled bleeding</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="emergencyFlags" value="slurred-speech">
+                                    <span>Slurred speech / Confusion</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="emergencyFlags" value="blue-lips">
+                                    <span>Blue lips or face</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="emergencyFlags" value="seizure">
+                                    <span>Seizure</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="emergencyFlags" value="none">
+                                    <span>None of these</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 8: Current Medications -->
+                    <div class="form-step" data-step="8">
+                        <div class="step-header">
+                            <span class="step-icon">💊</span>
+                            <h3>Current Medications</h3>
+                        </div>
+                        <div class="form-group">
+                            <label for="medications">Are you currently taking any medications?</label>
+                            <textarea id="medications" name="medications" rows="3" placeholder="List any medications (optional)"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Step 9: Additional Info -->
+                    <div class="form-step" data-step="9">
+                        <div class="step-header">
+                            <span class="step-icon">✍️</span>
+                            <h3>Additional Information</h3>
+                        </div>
+                        <div class="form-group">
+                            <label for="additionalInfo">Any other details we should know?</label>
+                            <textarea id="additionalInfo" name="additionalInfo" rows="4" placeholder="Optional: Recent travel, exposure to illness, allergies, etc."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Form Navigation -->
+                    <div class="form-actions">
+                        <button type="button" class="btn-secondary" id="prevBtn" onclick="changeStep(-1)" style="display: none;">
+                            ← Previous
+                        </button>
+                        <button type="button" class="btn-primary" id="nextBtn" onclick="changeStep(1)">
+                            Next →
+                        </button>
+                        <button type="submit" class="btn-submit" id="submitBtn" style="display: none;">
+                            <span>🧠 Analyze with AI</span>
+                            <span class="button-glow"></span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Result Section (Enhanced with Explainability) -->
+    <section id="result" class="result-section" style="display: none;">
+        <div class="container">
+            <div class="result-card" id="resultCard">
+                <div class="result-icon-wrapper">
+                    <div class="result-icon" id="resultIcon"></div>
+                </div>
+                <h2 class="result-title" id="resultTitle"></h2>
+                <div class="result-priority" id="resultPriority"></div>
+                <p class="result-description" id="resultDescription"></p>
+
+                <!-- AI Explainability Panel (UNIQUE FEATURE) -->
+                <div class="explainability-panel">
+                    <h3>🔍 Why This Priority?</h3>
+                    <div class="risk-breakdown" id="riskBreakdown"></div>
+                    <div class="risk-score-display">
+                        <div class="score-circle" id="scoreCircle">
+                            <span class="score-value" id="scoreValue">0</span>
+                            <span class="score-label">/100</span>
+                        </div>
+                        <div class="score-factors" id="scoreFactors"></div>
+                    </div>
+                </div>
+
+                <!-- Smart Routing Recommendations -->
+                <div class="routing-panel">
+                    <h3>🚀 Recommended Next Steps</h3>
+                    <div class="routing-path" id="routingPath"></div>
+                </div>
+
+                <!-- Detailed Recommendations -->
+                <div class="result-recommendations" id="resultRecommendations"></div>
+
+                <!-- Action Buttons -->
+                <div class="result-actions">
+                    <button class="btn-primary" onclick="resetForm()">New Assessment</button>
+                    <button class="btn-secondary" onclick="window.print()">Print Report</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Doctor Dashboard -->
+    <section id="dashboard" class="dashboard-section">
+        <div class="container">
+            <h2 class="section-title">Doctor Dashboard with AI Insights</h2>
+            <p class="section-subtitle">Real-time patient queue with explainable priority reasoning</p>
+            
+            <div class="dashboard-stats">
+                <div class="dashboard-stat-card emergency-card">
+                    <div class="stat-icon red-bg">🚨</div>
+                    <div class="stat-info">
+                        <div class="stat-value" id="emergencyCount">0</div>
+                        <div class="stat-label">Emergency</div>
+                        <div class="stat-sublabel">Immediate attention</div>
+                    </div>
+                </div>
+                <div class="dashboard-stat-card urgent-card">
+                    <div class="stat-icon yellow-bg">⚠️</div>
+                    <div class="stat-info">
+                        <div class="stat-value" id="urgentCount">0</div>
+                        <div class="stat-label">Urgent</div>
+                        <div class="stat-sublabel">24-48 hours</div>
+                    </div>
+                </div>
+                <div class="dashboard-stat-card routine-card">
+                    <div class="stat-icon green-bg">✓</div>
+                    <div class="stat-info">
+                        <div class="stat-value" id="routineCount">0</div>
+                        <div class="stat-label">Routine</div>
+                        <div class="stat-sublabel">Self-care</div>
+                    </div>
+                </div>
+                <div class="dashboard-stat-card total-card">
+                    <div class="stat-icon blue-bg">📊</div>
+                    <div class="stat-info">
+                        <div class="stat-value" id="totalCount">0</div>
+                        <div class="stat-label">Total Today</div>
+                        <div class="stat-sublabel">All patients</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard-table-container">
+                <table class="dashboard-table">
+                    <thead>
+                        <tr>
+                            <th>Priority</th>
+                            <th>Patient</th>
+                            <th>Age</th>
+                            <th>Primary Symptom</th>
+                            <th>Risk Score</th>
+                            <th>Context Factors</th>
+                            <th>Time</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="dashboardTableBody">
+                        <!-- Dynamic content -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-icon">🏥</span>
+                    <span class="logo-text">SmartTriage AI</span>
+                </div>
+                <p class="footer-text">
+                    Context-Aware AI Triage System with Explainable Intelligence
+                    <br>Advanced multi-layer risk assessment for modern healthcare
+                </p>
+                <div class="footer-features">
+                    <span>✓ 3-Layer Analysis</span>
+                    <span>✓ Explainable AI</span>
+                    <span>✓ Smart Routing</span>
+                    <span>✓ Context-Aware</span>
+                </div>
+                <div class="footer-disclaimer">
+                    <strong>Medical Disclaimer:</strong> SmartTriage AI is an educational demonstration tool for intelligent patient prioritization. 
+                    It does NOT provide medical diagnosis or treatment. Always consult qualified healthcare professionals for medical decisions. 
+                    In emergencies, call 911 immediately.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
